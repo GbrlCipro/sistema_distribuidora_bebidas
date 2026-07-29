@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS produtos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    preco REAL NOT NULL,
+    categoria TEXT,
+    estoque INTEGER DEFAULT 0,
+    ativo INTEGER DEFAULT 1
+);
